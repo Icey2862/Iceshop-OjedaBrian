@@ -1,11 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  background-color:#282c34  ;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
+.lista{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.divNav{
+  min-height: 100px;
+  width: 100%;
+}
+
+.Title{
+  color: white;
+  font-size: 48px;
+  padding: 40px 0 40px 0;
+}
+
+.Item{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+.dropdawn{
+  list-style-type: none;
+  position: absolute;
+  display: none;
+  text-align: center;
+}
+
+.drop:hover > ul{
+  display: block;
+  background-color: white;
+  min-width:140px;
+}
+.drop:hover > ul > li > a{
+  color: black;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -21,7 +67,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffffff;
 }
 
 .App-link {
