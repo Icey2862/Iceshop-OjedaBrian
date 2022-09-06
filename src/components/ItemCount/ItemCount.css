@@ -1,0 +1,15 @@
+.counter{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 100px;
+}
+.button{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 4px 15px 0 15px;
+    border: 1px dashed black;
+    color: white;
+    background-color: black;
+}
