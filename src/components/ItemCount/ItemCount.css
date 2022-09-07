@@ -1,8 +1,7 @@
 .counter{
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    padding-top: 100px;
+    padding-bottom: 30px;
 }
 .button{
     border-radius: 50%;
