@@ -1,9 +1,8 @@
 import { useState } from "react"
 import "./ItemCount.css"
 
-const ItemCount = () => {
+const ItemCount = ({stock, valorInicial,  }) => {
     const [initialState, setFinalState] = useState(0) //Inicializamos el UseState
-    const stock = 5 // Stock Productos
 
     const increase = () => { //Funcion encargada de aumentar el marcador
         initialState < stock 
@@ -17,6 +16,10 @@ const ItemCount = () => {
         : (alert("No puedes descender mas alla del 0"))
     }
 
+    const onAdd = () =>{
+        alert("Usted agrego " + {initialState} + " elementos del producto al carrito"  )
+        console.log(initialState)
+    }
     return (
         <div>
             <div className="counter">
@@ -24,6 +27,7 @@ const ItemCount = () => {
                 <h3>{initialState}</h3> {/* Numero en el que se encuentra actualmente */}
                 <button className="button" onClick={decrease}>-</button> {/* Boton para reducir el marcador */}
             </div>
+            <button onClick={onAdd}>Agregar al carrito</button>
         </div>
     )
 }

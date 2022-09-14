@@ -1,0 +1,41 @@
+.divDetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+
+.divDetailTwo{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.divDetailThree{
+    display: flex;
+    flex-direction: column;
+
+}
+.productDetail{
+    padding-top: 80px;
+}
+.descDetail{
+    max-width: 300px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.btnDetail{
+    margin-left: 60px;
+    height: 80px;
+    width: 200px;
+    background-color: black;
+    border: 1px dashed white;
+    color: white;
+    border-radius: 50%;
+}
+
+
