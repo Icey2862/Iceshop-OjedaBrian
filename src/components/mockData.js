@@ -1,12 +1,33 @@
 const Data = [
     {
-        id:"1", titulo: "Buzo Blanco Liso", precio: "$"+ 6999, desc:"",  img: "https://taverniti.vteximg.com.br/arquivos/ids/237910-2000-2500/05394_600X1.jpg?v=637826089536430000", 
+        id:1, titulo: "Buzo Levis Negro Y Rojo", precio: "$"+ 5999, type:"buzo", desc:"Buzo negro levis de alta calidad, importado desde USA",  img: "https://cdn.discordapp.com/attachments/728021438061346850/1003837858613829652/buzo1.jpg", 
     },
     {
-        id:"2", titulo: "Buzo Negro Trasher", precio:  "$"+ 5999 , desc:"",  img: "https://drifters.com.ar/uploads/product_image/21478/650w_DriftersPDP_Thrasher_APP_TRSH340400-080_Shot1.jpg",
+        id:2, titulo: "Buzo Levis Blanco Y Gris", precio:  "$"+ 5999,type: "buzo", desc:"Buzo blanco y gris, elaborado por Iceshop INC. ",  img: "https://cdn.discordapp.com/attachments/728021438061346850/1003838219789545573/buzo2.jpg",
     },
     {
-        id: "3", titulo: "Buzo Naruto Itachi", precio: "$"+  6999, desc:"Buzo de la Famosa serie Naruto junto a un personaje caracteristico y polemico de la misma, el buzo esta hecho de las telas mas premium del mercado.", img: "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/011/318/products/itachieyes_cg1-1db5db2c883571b1c316044589910686-1024-1024.jpg"
+        id: 3, titulo: "Remera ICEShop Blanca", precio: "$"+  2499, type:"remera", desc:"Remera blanca original de Iceshop, la remera esta hecho de las telas mas premium del mercado.", img: "https://cdn.discordapp.com/attachments/728021438061346850/1003839688378953758/remera1.jpg"
+    },
+    {
+        id:4, titulo: "Remera Negra Estampado", precio: "$"+ 2499, type: "remera", desc:"Remera negra original de Iceshop, la remera esta hecho de las telas mas premium del mercado.",  img: "https://cdn.discordapp.com/attachments/728021438061346850/1003839700005552248/remera2.jpeg", 
+    },
+    {
+        id:5, titulo: "Bermuda Cargo Ezpecial", precio:  "$"+ 3999 , type:"bermuda", desc:"Una de las pocas bermudas lanzadas por Iceshop, excelente calidad",  img: "https://cdn.discordapp.com/attachments/728021438061346850/1003839789344231505/bermuda1.jpg",
+    },
+    {
+        id:6, titulo: "Jogger Gabardina Mostaza", precio: "$"+ 4599, desc:"", type:"jogger", img: "https://cdn.discordapp.com/attachments/728021438061346850/1003839956797624470/jogger.jpg", 
+    },
+    {
+        id:7, titulo: "Conjunto Negro Y Amarillo", precio:  "$"+ 10999 , desc:"", type:"conjunto", img: "https://cdn.discordapp.com/attachments/728021438061346850/1003841239554195526/conjunto1.jpg",
+    },
+    {
+        id:8, titulo: "Conjunto ICEShop Oscuro", precio: "$"+ 10999, desc:"",type:"conjunto",  img: "https://cdn.discordapp.com/attachments/728021438061346850/1003840112955760680/conjunto2.jpg", 
+    },
+    {
+        id:9, titulo: "RELOJ Paul Hewitt", precio:  "$"+ 6999 , desc:"", type:"conjunto", img: "https://cdn.discordapp.com/attachments/728021438061346850/1003840171063656558/accesorio1.jpg",
+    },
+    {
+        id:10, titulo: "RELOJ Watch", precio: "$"+ 8999, desc:"", type:"conjunto",  img: "https://cdn.discordapp.com/attachments/728021438061346850/1003840742747279461/accesorio2.jpg", 
     },
 ]
 

@@ -1,5 +1,6 @@
 import '../../App.css';
 import CartWidget from '../CartWidget/CartWidget';
+import { NavLink } from 'react-router-dom';
 const NavBar = () =>{
     return(
         <div className='divNav'>
@@ -7,30 +8,37 @@ const NavBar = () =>{
             <nav className="navFlex">
                 <ul className='lista'>
                     <li>
-                        <a href='#' className='Item'>Buzos</a>
+                        <NavLink
+                        to={"/home"}
+                        style={({isActive})=>
+                            isActive
+                            ?{fontWeight:"bold", color:"#61dafb", textDecoration: "none"}
+                            :{color: "white", textDecoration:"none"}
+                        }>
+                        Home
+                        </NavLink>
                     </li>
-                    <li className='drop'><a href='#' className='Item'>Remeras</a>
-                        <ul className='dropdawn'>
-                            <li>
-                                <a href='#' className='Item'>Remeras Lisas</a>
-                            </li>
-                            <li>
-                                <a href='#' className='Item'>Remeras Estampadas</a>
-                            </li>
-                        </ul>
+                    <li>
+                    <NavLink
+                        to={"/about"}
+                        style={({isActive})=>
+                            isActive
+                            ?{fontWeight:"bold", color:"#61dafb", textDecoration: "none"}
+                            :{color: "white", textDecoration:"none"}
+                        }>
+                        About
+                        </NavLink>
                     </li>
                     <li> 
-                        <a href='#' className='Item'>Bermudas</a>
-                    </li>
-                    <li> 
-                        <a href='#' className='Item'>Conjuntos</a>
-                    </li>
-                    <li className='drop'> <a href='#' className='Item'>Accesorios</a>
-                        <ul className='dropdawn'>
-                            <li><a href='#' className='Item'>Relojes</a></li>
-                            <li><a href='#' className='Item'>Gorras</a></li>
-                            <li><a href='#' className='Item'>Anillos</a></li>
-                        </ul>
+                    <NavLink
+                        to={"/contact"}
+                        style={({isActive})=>
+                            isActive
+                            ?{fontWeight:"bold", color:"#61dafb", textDecoration: "none"}
+                            :{color: "white", textDecoration:"none"}
+                        }>
+                        Contact
+                        </NavLink>
                     </li>
                     <li>
                         <CartWidget/>
