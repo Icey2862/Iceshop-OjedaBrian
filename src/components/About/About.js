@@ -1,8 +1,10 @@
-
+import "./About.css"
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+      <h2 className="aboutUs">Sobre Nosotros!</h2>
+    </>
   )
 }
 

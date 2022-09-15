@@ -20,7 +20,7 @@ const NavBar = () =>{
                     </li>
                     <li>
                     <NavLink
-                        to={"/about"}
+                        to={"category/about"}
                         style={({isActive})=>
                             isActive
                             ?{fontWeight:"bold", color:"#61dafb", textDecoration: "none"}
@@ -31,7 +31,7 @@ const NavBar = () =>{
                     </li>
                     <li> 
                     <NavLink
-                        to={"/contact"}
+                        to={"category/contact"}
                         style={({isActive})=>
                             isActive
                             ?{fontWeight:"bold", color:"#61dafb", textDecoration: "none"}
