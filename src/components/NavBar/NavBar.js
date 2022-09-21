@@ -1,26 +1,68 @@
 import '../../App.css';
 import CartWidget from '../CartWidget/CartWidget';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 const NavBar = () =>{
     return(
         <div className='divNav'>
-            <h1 className='Title'>ICESHOP</h1>
+                <Link 
+                to={"/"}
+                style = {{ textDecoration: 'none', color:"#61dafb", fontSize:"64px"}}>
+                    ICESHOP
+                </Link>
             <nav className="navFlex">
                 <ul className='lista'>
-                    <li>
-                        <NavLink
-                        to={"/home"}
-                        style={({isActive})=>
-                            isActive
-                            ?{fontWeight:"bold", color:"#61dafb", textDecoration: "none"}
-                            :{color: "white", textDecoration:"none"}
-                        }>
-                        Home
-                        </NavLink>
-                    </li>
+                <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Products
+                    </a>
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <Link
+                            to="/category/buzos"
+                            className="dropdown-item">
+                                Buzos
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                            to="/category/remeras"
+                            className="dropdown-item">
+                                Remeras
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                            to="/category/bermudas"
+                            className="dropdown-item">
+                                Bermudas
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                            to="/category/joggers"
+                            className="dropdown-item">
+                                Joggers
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                            to="/category/conjuntos"
+                            className="dropdown-item">
+                                Conjuntos
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                            to="/category/accesorios"
+                            className="dropdown-item">
+                                Accesorios
+                            </Link>
+                        </li>
+                    </ul>
+                </li>
                     <li>
                     <NavLink
-                        to={"category/about"}
+                        to={"about"}
                         style={({isActive})=>
                             isActive
                             ?{fontWeight:"bold", color:"#61dafb", textDecoration: "none"}
@@ -31,7 +73,7 @@ const NavBar = () =>{
                     </li>
                     <li> 
                     <NavLink
-                        to={"category/contact"}
+                        to={"contact"}
                         style={({isActive})=>
                             isActive
                             ?{fontWeight:"bold", color:"#61dafb", textDecoration: "none"}

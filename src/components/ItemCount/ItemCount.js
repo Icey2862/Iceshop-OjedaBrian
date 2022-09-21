@@ -31,7 +31,7 @@ const ItemCount = ({stock, valorInicial, setCount}) => {
                 <h3>{valorInicial}</h3> {/* Numero en el que se encuentra actualmente */}
                 <button className="button" onClick={decrease}>-</button> {/* Boton para reducir el marcador */}
             </div>
-            <button className="btnCart" onClick={onAdd}>Agregar al carrito</button>
+            <button className="btn btn-primary" onClick={onAdd}>Agregar al carrito</button>
         </div>
     )
 }

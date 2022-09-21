@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 const ItemDetail = ({Product}) => {
 
   const [count, setFinalCount] = useState(0)
-
+  
 
   return (
     <div className="divDetail">

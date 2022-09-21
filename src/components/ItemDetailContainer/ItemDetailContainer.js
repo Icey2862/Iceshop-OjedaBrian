@@ -21,9 +21,11 @@ const ItemDetailContainer = () => {
         }).finally(()=>setIsLoading(false))
     }, [id])
 
+
     if (isLoading) {
         return <h2>Cargando detalle del producto ...</h2>;
     }
+
 
     return (
     <>

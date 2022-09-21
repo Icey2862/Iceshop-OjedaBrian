@@ -1,22 +1,16 @@
 .counter{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-bottom: 5px;
 }
 .button{
     border-radius: 50%;
     height: 30px;
     width: 30px;
-    margin: 4px 15px 0 15px;
+    margin: 0px 15px 0 15px;
+    text-align: center;
     border: 1px dashed black;
     color: white;
     background-color: black;
-}
-
-.btnCart{
-    color: #FFFFFF; 
-    background-color: #000000; 
-    border-color: #000000; 
-    width: 250px;
-    height: 50px;
 }
