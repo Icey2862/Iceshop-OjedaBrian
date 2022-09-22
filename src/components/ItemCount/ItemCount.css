@@ -5,12 +5,13 @@
     padding-bottom: 5px;
 }
 .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    margin: 0px 15px 0 15px;
-    text-align: center;
-    border: 1px dashed black;
+    height: 40px;
+    width: 40px;
+    margin: 0px 15px 0px 15px;
     color: white;
     background-color: black;
 }

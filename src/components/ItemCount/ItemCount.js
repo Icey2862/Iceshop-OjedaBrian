@@ -1,6 +1,6 @@
 import "./ItemCount.css"
 
-const ItemCount = ({stock, valorInicial, setCount}) => {
+const ItemCount = ({stock, valorInicial,setCount, funcion, product}) => {
     //Inicializamos el UseState
 
     const increase = () => { //Funcion encargada de aumentar el marcador
@@ -15,15 +15,10 @@ const ItemCount = ({stock, valorInicial, setCount}) => {
     const decrease = () => { //Funcion encargada de reducir el marcador
         if(valorInicial === 0){
             return
-        }
+        } 
         setCount(valorInicial - 1)
     }
 
-    const onAdd = () =>{
-        valorInicial > 0
-            ? alert("Usted agrego " + valorInicial + " elementos del producto al carrito")
-            : alert("No se pueden agregar 0 productos al carrito")
-    }
     return (
         <div>
             <div className="counter">
@@ -31,7 +26,7 @@ const ItemCount = ({stock, valorInicial, setCount}) => {
                 <h3>{valorInicial}</h3> {/* Numero en el que se encuentra actualmente */}
                 <button className="button" onClick={decrease}>-</button> {/* Boton para reducir el marcador */}
             </div>
-            <button className="btn btn-primary" onClick={onAdd}>Agregar al carrito</button>
+            <button className="btn btn-primary" onClick={()=>funcion(product)}>Agregar al carrito</button>
         </div>
     )
 }
