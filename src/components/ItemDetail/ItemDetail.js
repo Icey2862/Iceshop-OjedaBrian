@@ -8,9 +8,11 @@ import { cartContext } from "../../context/CartContext"
 const ItemDetail = ({ Product }) => {
 
   const [count, setFinalCount] = useState(0)
+  const [hasAddProduct, setHasAddProduct] = useState(false)
     const {addToCart} = useContext(cartContext)
     const onAdd = (product) =>{
       if((count <= product.stock) && (product.stock !== 0) && (count !== 0)){
+        setHasAddProduct(true)
         product.stock = product.stock - count
         addToCart(product, count)
       }
@@ -25,8 +27,9 @@ const ItemDetail = ({ Product }) => {
           <h2 className="productDetail">{Product.precio}</h2>
           <p className="descDetail">{Product.desc}</p>
           <h3>Stock disponible {Product.stock}</h3>
-          <ItemCount stock={Product.stock} valorInicial={count} setCount={setFinalCount} funcion={onAdd} product={Product}/>
-          <Link to={"/cart"}>Ir al carrito</Link>
+          {hasAddProduct
+          ? (<Link to={"/cart"}>Ir al carrito</Link>)
+          : (<ItemCount stock={Product.stock} valorInicial={count} setCount={setFinalCount} funcion={onAdd} product={Product}/>)}
         </div>
       </div>
     </div>

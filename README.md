@@ -1,6 +1,6 @@
 # ICESHOP por Brian Ojeda
 
-Este proyecto esta realizado en React , es el proyecto final de el curso de React dictado en [CoderHouse](https://www.coderhouse.com)
+Este proyecto esta realizado en React y se esta implementando el uso de bootstrap para la maquetacion , es el proyecto final de el curso de React dictado en [CoderHouse](https://www.coderhouse.com)
 
 Es un Ecommerce de indumentaria creada ficticiamente por la marca ICESHOP, en la tienda se pueden encontrar los articulos en venta, la forma de contactarnos y un poco sobre nosotros
 
@@ -12,6 +12,8 @@ Actualmente se esta usando el archivo mockData.js que contiene la informacion de
 ## Dependencias instaladas
 
 - [React-router-dom](https://v5.reactrouter.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Popper](https://popper.js.org) //Dependencia de bootstrap
 
 ## Para mas informacion :https://github.com/Icey2862/Iceshop-OjedaBrian:
 
