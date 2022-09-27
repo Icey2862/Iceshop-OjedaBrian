@@ -2,3 +2,13 @@
     width: 80px;
     height: 80px;
 }
+.itemsInCart{
+    position: absolute;
+    top: 90px;
+    right: 102px;
+    font-size: 1rem;
+    background-color: white;
+    padding: 5px 5px;
+    color: #000;
+    border-radius: 50%;
+}

@@ -1,4 +1,4 @@
-.divDetail{
+.divDetail {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,28 +7,30 @@
     height: 700px;
 }
 
-.divDetailTwo{
-    display:flex;
+.divDetailTwo {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.divDetailThree{
+.divDetailThree {
     display: flex;
     flex-direction: column;
 
 }
-.productDetail{
+
+.productDetail {
     padding-top: 80px;
 }
-.descDetail{
+
+.descDetail {
     max-width: 300px;
     margin-top: 30px;
     margin-bottom: 40px;
 }
 
-.btnDetail{
+.btnDetail {
     margin-left: 60px;
     height: 80px;
     width: 200px;
@@ -37,5 +39,3 @@
     color: white;
     border-radius: 50%;
 }
-
-
