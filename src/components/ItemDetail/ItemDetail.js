@@ -6,8 +6,12 @@ import { cartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ Product }) => {
   const [count, setFinalCount] = useState(0);
+
   const [hasAddProduct, setHasAddProduct] = useState(false);
+
+
   const { addToCart } = useContext(cartContext);
+
   const onAdd = (product) => {
     if (count <= product.stock && product.stock !== 0 && count !== 0) {
       setHasAddProduct(true);
