@@ -8,7 +8,8 @@ const ItemList = ({ lista }) => {
         <Link
           key={product.id}
           to={"/item/" + product.id}
-          style={{ textDecoration: "none", color: "white" }}
+
+          style={{ textDecoration: "none", color: "white"}}
         >
           <Item
             titulo={product.titulo}
